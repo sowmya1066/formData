@@ -1,0 +1,203 @@
+/* General styling */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background: rgb(223, 211, 195);
+  background: radial-gradient(
+    circle,
+    rgba(223, 211, 195, 1) 20%,
+    rgba(199, 177, 152, 1) 69%
+  );
+}
+
+/* Navigation tabs */
+.tabs {
+  background-color: #c7b198;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.tab-button {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #c7b198; /* Default background color */
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #444;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: rgba(199, 177, 152, 0.8); /* Hover background color */
+}
+
+/* Submit form styling */
+#submit-form {
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  max-width: 600px;
+}
+
+.submit--btn {
+  width: 30%;
+  margin-top: 1rem;
+  background-color: #c7b198; /* Default background color */
+  color: #444;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 20rem;
+}
+
+.submit--btn:hover {
+  background-color: rgba(199, 177, 152, 0.8); /* Hover background color */
+}
+
+/* Button view styling */
+.button-view {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.button-view .button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #c7b198; /* Default background color */
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #444;
+  transition: background-color 0.3s ease;
+}
+
+.button-view .button:hover {
+  background-color: rgba(199, 177, 152, 0.8); /* Hover background color */
+}
+
+/* View tab button styling */
+#view-tab {
+  margin-right: 1rem; /* Provide some space between buttons */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #c7b198; /* Default background color */
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+#view-tab:hover {
+  background-color: rgba(199, 177, 152, 0.8); /* Hover background color */
+  transform: translateY(-3px);
+}
+
+/* Submit tab button styling */
+#submit-tab {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #c7b198; /* Default background color */
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+#submit-tab:hover {
+  background-color: rgba(199, 177, 152, 0.8); /* Hover background color */
+  transform: translateY(-3px);
+}
+
+/* Form label styling */
+label {
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+}
+
+/* Form input styling */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 65%; /* Adjusted width */
+  padding: 10px;
+  margin-bottom: 0.1rem; /* Added margin-bottom */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(214, 198, 177);
+  margin-left: -6rem;
+}
+
+/* Table styling */
+table {
+  width: 80%; /* Adjust table width as needed */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #c7b198;
+  color: #444;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(209, 190, 168);
+}
+
+#filter-options {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-left: 3.2rem;
+  /* display: none !important; */
+}
+
+#filter-type {
+  width: 22%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(214, 198, 177);
+  margin-left: -20rem;
+}
+
+.filter--btn {
+  background-color: rgb(189, 158, 122);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80px;
+}
+.filter--btn:hover {
+  background-color: rgba(199, 177, 152, 1);
+}
+
+#filter-value {
+  width: 20%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}

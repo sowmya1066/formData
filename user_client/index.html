@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tabs">
+      <button id="view-tab" onclick="openTab('view')">View</button>
+      <button id="submit-tab" onclick="openTab('submit')">Submit</button>
+    </div>
+    <div id="view-content" class="tab-content">
+      <div id="filter-options" style="display: none">
+        <label for="filter-type">Filter By:</label>
+        <select id="filter-type">
+          <option value="">Select</option>
+          <option value="name">name</option>
+          <option value="dob">Date of Birth</option>
+          <option value="age">Age</option>
+        </select>
+        <input type="text" id="filter-value" placeholder="Enter value" />
+        <button onclick="filterData()" class="filter--btn">Filter</button>
+      </div>
+      <table id="user-table" border="1"></table>
+      <!-- View content will be loaded dynamically -->
+    </div>
+    <div id="submit-content" class="tab-content" style="display: none">
+      <!-- Submit form will be loaded dynamically -->
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
